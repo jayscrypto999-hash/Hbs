@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hbs — GitHub Pages</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;max-width:900px;margin:40px auto;color:#111}
+    pre{background:#f6f8fa;padding:12px;border-radius:6px;overflow:auto}
+    a{color:#0366d6}
+  </style>
+</head>
+<body>
+  <h1>Hbs</h1>
+  <p>A small assistant script repository. This GitHub Pages site provides a public URL and quick usage instructions.</p>
+
+  <h2>Quick start</h2>
+  <p>Clone the repo, install dependencies, and run the safe assistant:</p>
+  <pre>python3 -m pip install -r requirements.txt
+python3 hbs_safe.py --noninteractive</pre>
+
+  <h2>Full interactive assistant</h2>
+  <p>Run the interactive assistant (not recommended in Codespaces):</p>
+  <pre>python3 hbs.py</pre>
+
+  <h2>Notes</h2>
+  <ul>
+    <li>`hbs_safe.py` will NOT auto-install system binaries or run installers.</li>
+    <li>To use the full capability you must install <em>ollama</em> and run its server: <code>ollama serve &</code></li>
+  </ul>
+
+  <h2>Custom domain (apex)</h2>
+  <p>This site is configured to use the apex custom domain <strong>HBSsitemaker.com</strong>. To make the domain live, add the following DNS records at your registrar for the apex domain:</p>
+  <ul>
+    <li><strong>A</strong> records (point <em>@</em> to):
+      <pre>185.199.108.153
+185.199.109.153
+185.199.110.153
+185.199.111.153</pre>
+    </li>
+    <li>Optionally add a CNAME for <code>www</code> pointing to <code>jayscrypto999-hash.github.io</code> if you want www.HBSsitemaker.com as well.</li>
+  </ul>
+  <p>After DNS updates, GitHub Pages will provision HTTPS automatically (may take a few minutes to hours). Keep `docs/CNAME` in the repo so GitHub associates the custom domain with the Pages site.</p>
+
+  <p>Repository: <a href="https://github.com/jayscrypto999-hash/Hbs">jayscrypto999-hash/Hbs</a></p>
+</body>
+</html>
